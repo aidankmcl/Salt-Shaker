@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="Top Score"
+        android:textSize="20sp"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView3" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/score"
+        android:layout_below="@id/textView4"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Live Score"
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/score"
+        android:layout_alignLeft="@+id/clear" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/live"
+        android:layout_below="@+id/textView3"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="All Time"
+        android:textSize="20sp"
+        android:id="@+id/textView"
+        android:layout_below="@+id/live"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/cont"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"/>
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:text="wipe"
+        android:id="@+id/clear" />
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:text="Immortalize this moment?"
+        android:id="@+id/camera" />
+
+</RelativeLayout>
